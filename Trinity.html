@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity</title>
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 70px;
+            height: 96.8%;
+            width: 23%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar-left {
+            left: 0;
+            background: url('bannana_1.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        .sidebar-right {
+            right: 0;
+            background: url('bannana_2.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0px #000, 4px 4px 0px #000, 5px 5px 0px #000, 6px 6px 0px #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gif-container {
+            text-align: center;
+        }
+
+        .gif {
+            max-width: 100%;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .additional-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .additional-text .highlighted-text {
+            padding: 5px;
+            border-radius: 5px;
+            display: inline;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(to bottom, #000, #000);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.5rem;
+        }
+
+        .product-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .product-button {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: transform 0.2s;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .product-button:hover {
+            transform: scale(1.05);
+        }
+
+        .product-button img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            display: flex;
+            align-items: center;
+        }
+		
+        .close-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .close {
+            color: #000;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            height: auto;
+            width: fit-content;
+            text-align: center;
+            padding: 10px;
+            background-color: red;
+            border: 2px solid black;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .close:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+		
+        .details-text {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+		
+        .plain-details-text {
+            padding: 10px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity</title>
+</head>
+<body>
+    <div class="sidebar sidebar-left"></div>
+    <div class="sidebar sidebar-right"></div>
+
+    <header>
+        <h1>Най-добрия адвокат</h1>
+    </header>
+    
+	<div class="additional-text">
+        <p><span class="highlighted-text">Здравейте, това е Душа Добриячовек</span></p>
+        <h2><span class="highlighted-text">Любими клиенти</span></h2>
+		<ul>
+			<li class="highlighted-text">Г-ин Бял</li>
+			<li class="highlighted-text">Джеси Розовчовек</li>
+		</ul>
+    </div>
+	
+	<div class="additional-text">
+        <h2><span class="highlighted-text">Посетете моя любим сайт: <a href="https://eelslap.com/">$$$<a/></span></h2>
+    </div>
+	
+    <div class="container">
+        <div class="gif-container">
+            <img src="Saul.gif" alt="Welcome GIF" class="gif">
+        </div>
+    </div>
+</body>
+</html>
